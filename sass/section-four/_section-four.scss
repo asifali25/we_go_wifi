@@ -1,0 +1,51 @@
+@use '../util/' as u;
+
+.four {
+    width: 100%;
+    background-color: u.$blue-color;
+    
+    &__box__one {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 500px;
+        align-items: center;
+    }
+
+    &__box__one-heading {
+        font-size: clamp(2.5rem, 3vw, 7rem);
+        font-weight: 900;
+        letter-spacing: 1.5px;
+    }
+
+    &__box__one-button {
+        color: u.$white-color;
+        background-color: u.$black-color;
+        padding: 20px 55px;
+        font-size: clamp(1rem, 0.9vw, 2rem );
+        letter-spacing: 1.5px;
+        font-weight:100; 
+    }
+}
+
+@media screen and (max-width: 1196px) {
+    .four__box__one {
+        gap: 300px;
+    }
+}
+
+@media screen and (max-width: 896px) {
+    .four__box__one {
+        gap: 50px;
+    }
+}
+
+// @media screen and (max-width: 700px) {
+//     .four__box__one {
+//         gap: 50px;
+//     }
+// }

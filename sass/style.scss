@@ -1,0 +1,25 @@
+@forward 'util';
+@forward 'section-one';
+@forward 'section-two';
+@forward 'section-three';
+@forward 'section-four';
+@forward 'footer'; 
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
